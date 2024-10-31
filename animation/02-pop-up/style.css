@@ -39,6 +39,7 @@ button {
   pointer-events: none;
   opacity: 0%;
   text-align: center;
+  transition: 1s; /* here */
 }
 
 .popup-modal p {
@@ -60,4 +61,16 @@ button {
 
 .backdrop.show {
   opacity: 30%;
+}
+
+/* and here forward */
+.show.popup-modal {
+  animation-name: drop-down;
+  animation-duration: 1s;
+}
+
+@keyframes drop-down {
+  0% {
+    top: 0;
+  }
 }
